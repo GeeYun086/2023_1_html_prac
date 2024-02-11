@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>6장 실습4</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>레스토랑 예약하기</h1>
+      <form method="post" action="form_app.js">
+        <fieldset>
+          <legend>예약자 정보</legend>
+            예약자 : <input type="text" name="name" required><br>
+            연락처 : <input type="tel" name="tel" placeholder="000-0000-0000" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"><br>
+            예약인원 : <select name="people" size="1">
+              <option value="2">2명</option>
+              <option value="3">3명</option>
+              <option value="4">4명</option>
+              <option value="5more">5명 이상</option>
+            </select><br>
+        </fieldset><br>
+        <fieldset>
+          <legend>예약 시간 선택</legend>
+            <input type="date" name="date">
+            <input type="time" name="time"><br>
+        </fieldset><br>
+        <fieldset>
+          <legend>메뉴 선택</legend>
+            <input type="radio" name="menu" value="A">코스 A
+            <input type="radio" name="menu" value="B">코스 B
+            <input type="radio" name="menu" value="C">코스 C
+            <input type="radio" name="menu" value="D">코스 D<br>
+            <p>요청사항:<br>
+            <textarea name="comment" cols="80" rows="4">의견을 적으세요</textarea><br>
+        </fieldset><br>
+        <input type="submit" value="예약">
+        <input type="reset" value="취소">
+      </form>
+  </body>
+</html>

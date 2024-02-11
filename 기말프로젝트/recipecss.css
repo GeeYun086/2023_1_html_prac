@@ -1,0 +1,11 @@
+header {background-color: #e0b88a; margin: 1px; text-align: center;  font-family:맑은 고딕;}
+nav {background-color: #fff0c3; border: 3px solid brown; width: 10%; float: left; margin: 3px; margin-left: 5%; padding: 5px; font-family:맑은 고딕;}
+nav a {display: block; margin-left: 3px; margin-bottom: 3px; padding: 5px; font-weight: bold;  font-family:맑은 고딕;}
+article {background-color: #fff0c3; border: 3px solid brown; width: 75%; margin: 10px; margin-left: 20%; padding: 5px; font-family:맑은 고딕;}
+section {background-color: #ffffff; border: 3px solid brown; margin: 10px; padding: 10px; font-family:맑은 고딕;}
+section ul {font-family:맑은 고딕; margin: 3px; margin-left: 2%; padding: 5px;}
+footer {background-color: #e0b88a; border-top: 3px solid brown; margin: 3px; font-family:맑은 고딕; padding: 5px;}
+strong {color:brown; font-family:맑은 고딕; font-size:20pt; padding: 5px;}
+h {font-family:맑은 고딕;}
+p {font-family:맑은 고딕;}
+table {font-family:맑은 고딕; text-align: center;}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>기말과제</title>
+    <link rel="stylesheet" type="text/css" href="recipecss.css">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <header>
+      <h1>당신만의 레시피를 공유하세요!</h1>
+      <h3>해당 페이지는 요리를 좋아하는 모든 사람들이 레시피를 검색하고 공유하며 서로 피드백을 주고 받을 수 있도록 하기 위해 제작되었습니다.</h3>
+    </header>
+    <nav>메뉴
+      <a href="recipeshare2.html">소개</a>
+      <a href="recipeshare3.html">카테고리</a>
+      <a href="recipeshare4.html">검색</a>
+      <a href="recipeshare5.html">피드백</a>
+    </nav>
+    <article><strong>검색</strong>
+      <h3>직접 레시피를 검색할 수 있으며, 하단의 '레시피 추가' 버튼을 눌러서 나만의 레시피를 간단히 추가할 수 있습니다.</h3>
+      <section><mark><em>레시피 검색</em></mark>
+        <input type="button" onclick="searchRecipe();" value="레시피 검색"><br>
+        <table border="1">
+        <caption>검색한 레시피</caption>
+        <tr>
+          <th>요리</th><th>레시피 내용</th>
+        </tr>
+        <tr>
+          <td id="search1"></td><td id="search2"></td>
+        </tr>
+        </table>
+      </section>
+      <br>
+      <section><mark><em>레시피 추가</em></mark>
+        <input type="button" onclick="addRecipe();" value="레시피 추가"><br>
+        <table border="1">
+        <caption>추가한 레시피</caption>
+        <tr>
+          <th>요리</th><th>레시피 내용</th>
+        </tr>
+        <tr>
+          <td id="add1"></td><td id="add2"></td>
+        </tr>        
+        </table>
+      </section>
+    </article>
+    <script type="text/javascript">
+      function searchRecipe() {
+        var food1 = "1.계란말이";
+        var food2 = "2.샌드위치";
+        var food3 = "3.볶음밥";
+        var foodlist = food1 + "\n" + food2 + "\n" +  food3;
+
+        var recipe1 = "볼에 계란을 풀어준다.\n프라이팬에 계란을 얇게 펼쳐서 익혀준다.\n80%정도 익으면 말아주고 다시 펼치는 과정을 반복한다.";
+        var recipe2 = "넣을 재료를 준비한다.\n프라이팬에 버터를 한 조각 녹여서 빵을 구워준다.\n원하는 재료를 넣고 소스를 넣어준다.";
+        var recipe3 = "프라이팬에 계란을 넣고 익혀준다.\n반정도 익었을 때 계란을 옆에 밀어두고 다른 재료들을 넣어준다.\n재료들이 익어가면 밥을 넣고 2분 정도 볶아준다.";
+
+        var food, recipe;
+
+        var choice = prompt("아래 목록에서 검색하고 싶은 요리의 레시피 번호를 입력해주세요.\n"+foodlist, "");
+        
+        if (choice=="1") {
+          food = food1;
+          recipe = recipe1;
+        }
+        else if (choice=="2") {
+          food = food2;
+          recipe = recipe2;
+        }
+        else if (choice=="3") {
+          food = food3;
+          recipe = recipe3;
+        }
+        else {
+          alert("목록에 없는 레시피 번호를 입력하셨습니다.");
+          food = "";
+          recipe = "";
+        }
+
+        document.getElementById("search1").innerText=food;
+        document.getElementById("search2").innerText=recipe;
+      }
+
+      function addRecipe() {
+        var name = prompt("추가하고 싶은 요리의 이름을 입력해주세요.", "");
+        var text = prompt("추가하고 싶은 요리의 레시피를 입력해주세요.", "");
+
+        document.getElementById("add1").innerText=name;
+        document.getElementById("add2").innerText=text;
+      }
+  </script>
+    <footer>작성일 : 23/06/15<br>작성자 : 2216899 정지윤</footer>
+  </body>
+</html>

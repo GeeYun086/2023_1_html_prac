@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9장 실습1</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+  <script type="text/javascript">
+    var day = prompt("요일을 입력해 주세요.", "");
+    var engday = ""
+    switch (day) {
+        case "월요일":
+          engday = "Monday";
+          break;
+        case "화요일":
+          engday = "Tuesday"; 
+          break;
+        case "수요일":
+          engday = "Wednesday";
+          break;
+        case "목요일":
+          engday = "Thursday";
+          break;
+        case "금요일":
+          engday = "Friday";
+          break;
+        case "토요일":
+          engday = "Saturday";
+          break;
+        case "일요일":
+          engday = "Sunday";
+          break;
+        default:
+          alert("요일을 잘못 입력하셨습니다.");
+          engday = "";
+      };
+
+      document.write(engday + "<br/>");
+  </script>
+  </body>
+</html>

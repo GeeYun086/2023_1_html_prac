@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>기말과제</title>
+    <link rel="stylesheet" type="text/css" href="recipecss.css">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <header>
+      <h1>당신만의 레시피를 공유하세요!</h1>
+      <h3>해당 페이지는 요리를 좋아하는 모든 사람들이 레시피를 검색하고 공유하며 서로 피드백을 주고 받을 수 있도록 하기 위해 제작되었습니다.</h3>
+    </header>
+    <nav>메뉴
+      <a href="recipeshare2.html">소개</a>
+      <a href="recipeshare3.html">카테고리</a>
+      <a href="recipeshare4.html">검색</a>
+      <a href="recipeshare5.html">피드백</a>
+    </nav>
+    <article><strong>피드백</strong>
+      <h3>다른 사람의 레시피에 피드백을 추가할 수 있습니다.</h3>
+      <section><mark><em>레시피 목록</em></mark>
+        <h3>-계란말이 레시피<br>볼에 계란을 풀어준다.<br>프라이팬에 계란을 얇게 펼쳐서 익혀준다.<br>80%정도 익으면 말아주고 다시 펼치는 과정을 반복한다.</h3>
+        <input type="button" onclick="feedback1();" value="피드백 달기"><br>
+        <p></p>
+        <hr>
+        <h3>-샌드위치 레시피<br>넣을 재료를 준비한다.<br>프라이팬에 버터를 한 조각 녹여서 빵을 구워준다.<br>원하는 재료를 넣고 소스를 넣어준다.</h3>
+        <input type="button" onclick="feedback2();" value="피드백 달기"><br>
+        <p></p>
+        <hr>
+        <h3>-볶음밥 레시피<br>프라이팬에 계란을 넣고 익혀준다.<br>반정도 익었을 때 계란을 옆에 밀어두고 다른 재료들을 넣어준다.<br>재료들이 익어가면 밥을 넣고 2분 정도 볶아준다.</h3>
+        <input type="button" onclick="feedback3();" value="피드백 달기"><br>
+        <p></p>
+      </section>
+    </article>
+    <script type="text/javascript">
+      function feedback1() {
+        p_ele=document.getElementsByTagName("p");
+        var text = prompt("해당 레시피에 대한 피드백을 입력해주세요.", "");
+ 
+        p_ele[0].innerText=text;
+      }
+      function feedback2() {
+        p_ele=document.getElementsByTagName("p");
+        var text = prompt("해당 레시피에 대한 피드백을 입력해주세요.", "");
+ 
+        p_ele[1].innerText=text;
+      }
+      function feedback3() {
+        p_ele=document.getElementsByTagName("p");
+        var text = prompt("해당 레시피에 대한 피드백을 입력해주세요.", "");
+ 
+        p_ele[2].innerText=text;
+      }
+  </script>
+    <footer>작성일 : 23/06/15<br>작성자 : 2216899 정지윤</footer>
+  </body>
+</html>

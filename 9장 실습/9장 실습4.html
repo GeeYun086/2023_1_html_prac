@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9장 실습4</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+  <script type="text/javascript">
+    function cal_BMI(height, weight) {
+    var BMI = weight / (height / 100) ** 2;
+    
+    if (BMI >= 30)
+      document.write("당신은 현재 [비만] 상태 입니다. 운동하세요!");
+    else if (BMI < 30 && BMI >= 25)
+      document.write("당신은 현재 [과체중] 상태 입니다. 조심하세요!");
+    else if (BMI < 25 && BMI >= 18.5)
+      document.write("당신은 [정상] 입니다^^");
+    else if (BMI < 18.5 && BMI > 0)
+      document.write("당신은 현재 [저체중] 상태 입니다. 많이 드세요!");
+    }
+
+    var h = parseFloat(prompt("키를 입력하세요 : ", ""));
+    var w = parseFloat(prompt("몸무게를 입력하세요 : ", ""));
+
+    cal_BMI(h,w);
+  </script>
+  </body>
+</html>

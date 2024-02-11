@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>10장 실습2</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+  <div id="button_area">
+    <input type="button" value="button1">
+    <input type="button" value="button2">
+    <input type="button" value="button3">
+  </div>
+  <script type="text/javascript">
+  function remove_self(event) {
+    btn = event.target;
+    document.getElementById("button_area").removeChild(btn);
+  }
+
+  document.getElementById("button_area").onclick = remove_self;
+  </script>
+  </body>
+</html>

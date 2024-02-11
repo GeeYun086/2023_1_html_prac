@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>11장 실습1</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <input type="button" onclick="MyEventHandler();" value="addText">
+    <p><h1 id="textHere"></h1></p>
+  </body>
+  <script type="text/javascript">
+  function MyEventHandler() {
+    var text = prompt("text를 입력해주세요.", "");
+    document.getElementById("textHere").innerHTML = text;
+  }
+  </script>
+  </body>
+</html>

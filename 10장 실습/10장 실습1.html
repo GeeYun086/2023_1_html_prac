@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>10장 실습1</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+  <form>
+    <input id="dept" type="text" name="department" value="web programming">
+  </form>
+  <script type="text/javascript">
+    var dom = document.getElementById("dept");
+    alert(dom.name);
+    var newValue = prompt("새로운 value값을 입력해주세요.", ""); 
+    dom.value = newValue;
+  </script>
+  </body>
+</html>

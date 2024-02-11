@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9장 실습2</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+  <script type="text/javascript">
+      var total = 0;
+      var a = 1;
+      for (a = 1; a < 1001; a++) {
+        total += a;
+      }
+      document.write("0부터 1000까지의 합 : " + total + "<br/>");
+
+      var even = 0;
+      var b = 1;
+      while (b < 1001) {
+        if (b % 2 == 0)
+          even += b;
+          b++;
+        if (b % 2 != 0)
+          b++;
+      }
+      document.write("0부터 1000까지의 짝수의 합 : " + even + "<br/>");
+  </script>
+  </body>
+</html>

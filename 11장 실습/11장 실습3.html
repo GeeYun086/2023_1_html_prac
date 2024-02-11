@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>11장 실습3</title>
+    <meta charset="UTF-8">
+  </head>
+  <form>
+    <input id="op1" type="text" size="2">
+    <select id="oper" size="1">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+    </select>
+    <input id="op2" type="text" size="2">
+    <input type="button" value="=" onclick="cal();">
+    <input id="result" type="text" size="2">
+  </form>
+  <script type="text/javascript">
+  function add() {
+    var a = document.getElementById("op1").value;
+    var b = document.getElementById("op2").value;
+    document.getElementById("result").value=parseInt(a)+parseInt(b);
+  }
+  function sub() {
+    var a = document.getElementById("op1").value;
+    var b = document.getElementById("op2").value;
+    document.getElementById("result").value=parseInt(a)-parseInt(b);
+  }
+  function mul() {
+    var a = document.getElementById("op1").value;
+    var b = document.getElementById("op2").value;
+    document.getElementById("result").value=parseInt(a)*parseInt(b);
+  }
+  function div() {
+    var a = document.getElementById("op1").value;
+    var b = document.getElementById("op2").value;
+    document.getElementById("result").value=parseInt(a)/parseInt(b);
+  }
+  function cal() {
+   var op=document.getElementById("oper");
+   var opText = op.options[op.selectedIndex].text;
+   if (opText=="+") {
+     add();
+     }
+   if (opText=="-") {
+     sub();
+     }
+   if (opText=="*") {
+     mul();
+     }
+   if (opText=="/") {
+     div();
+     }
+   }
+  </script>
+</html>
